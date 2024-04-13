@@ -90,7 +90,7 @@ function addSearchToHistory() {
 
   let n = arr.length;
   history.innerHTML = "";
-  for (let i = 0; i < n; i++) {
+  for (let i = n-1; i >=0; i--) {
     const link = document.createElement("a");
     link.href = "#";
     console.log(arr[i]);
